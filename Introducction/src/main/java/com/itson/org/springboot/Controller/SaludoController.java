@@ -1,4 +1,4 @@
-package Controller;
+package com.itson.org.springboot.Controller;
 
 //controlador prueba
 //Controlador rest contiene anotaciones
@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 //identificar controlador en la url como /myController o dependiendo del recurso asociado /Usuario (ejemplo)
 @RequestMapping("/users")
 //enviar peticiones y recibir respuestas en formato JSON
-public class Controller {
+public class SaludoController {
     //metodos que exponen rutas consumidad por el fronted
 
     //metodos HTTP
@@ -42,7 +42,7 @@ public class Controller {
 
     //metodo get con parametro
     //parametro viene en la query URL (Usado en filtros o atributos)
-    @GetMapping("/saludar")
+    @GetMapping("/saludarNombre")
     public String saludarUserNombre(@RequestParam String nombre){
         return "Hola "+nombre;
     }
