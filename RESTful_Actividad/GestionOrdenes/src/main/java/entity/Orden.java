@@ -1,23 +1,24 @@
 package entity;
+
+
 import lombok.*;
+
+import java.sql.Date;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Producto {
+public class Orden {
+
     @Getter
     @Setter
     private int id;
 
     @Getter
     @Setter
-    private String nombre;
+    private Date fecha;
 
     @Getter
     @Setter
-    private double precio;
-
-    @Getter
-    @Setter
-    private int stock;
+    private double total;
 }
